@@ -14,5 +14,7 @@ cd build
 ./bin/PvZ
 ```
 
+> **Note:** All the guidance above is for Linux users, it might be a little different on Windows & MacOS. 
+
 ## Design Your Own PvZ Game
 * You can follow the guidance under `docs/` to design your own PvZ game!
