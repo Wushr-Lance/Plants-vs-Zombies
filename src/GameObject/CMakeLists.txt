@@ -1,0 +1,54 @@
+cmake_minimum_required(VERSION 3.16)
+
+add_library(
+  GameObject
+  STATIC
+  GameObject.hpp
+  GameObject.cpp
+  Background.hpp
+  Background.cpp
+  PlantingSpot.hpp
+  PlantingSpot.cpp
+  Plant/Sunflower.hpp
+  Plant/Sunflower.cpp
+  Plant/PlantBase.hpp
+  Plant/PlantBase.cpp
+  Plant/Peashooter.hpp
+  Plant/Peashooter.cpp
+  Plant/Wallnut.hpp
+  Plant/Wallnut.cpp
+  Plant/CherryBomb.hpp
+  Plant/CherryBomb.cpp
+  Sun.hpp
+  Sun.cpp
+  Seed/SeedBase.hpp
+  Seed/SeedBase.cpp
+  Seed/Seed.hpp
+  Seed/Seed.cpp
+  CooldownMusk.hpp
+  CooldownMusk.cpp
+  Shovel.hpp
+  Shovel.cpp
+  Zombie/ZombieBase.hpp
+  Zombie/ZombieBase.cpp
+  Zombie/RegularZombie.hpp
+  Zombie/RegularZombie.cpp
+  Projectile/Pea.hpp
+  Projectile/Pea.cpp
+  Projectile/Explosion.hpp
+  Projectile/Explosion.cpp
+)
+
+target_link_libraries(
+  GameObject
+  Framework
+)
+
+target_include_directories(
+  GameObject
+  PUBLIC 
+  ${CMAKE_SOURCE_DIR}/src/
+  ${CMAKE_SOURCE_DIR}/src/Framework/
+  ${CMAKE_SOURCE_DIR}/src/GameWorld/
+  ${CMAKE_SOURCE_DIR}/src/GameObject/
+)
