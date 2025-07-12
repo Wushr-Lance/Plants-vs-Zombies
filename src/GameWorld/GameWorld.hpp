@@ -48,7 +48,7 @@ public:
 
   void SetSelectedSeed(SeedBase *seed);
 
-  SeedBase *GameWorld::GetSelectedSeed() const;
+  SeedBase *GetSelectedSeed() const;
 
   void SunflowerGenerateSun(int x, int y);
 
